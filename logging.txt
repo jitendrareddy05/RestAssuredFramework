@@ -1,0 +1,81 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userEmail": "jitendra.ts@gmail.com",
+    "userPassword": "Password@123"
+}
+HTTP/1.1 200 OK
+Date: Sat, 20 Jul 2024 10:29:43 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 360
+ETag: W/"168-i9hDsumofPH/RNjqBuQO7/OE2Jo"
+Vary: Accept-Encoding
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTc3NGViODlmZDk5Yzg1ZThlNmQ2NDkiLCJ1c2VyRW1haWwiOiJqaXRlbmRyYS50c0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODQ0OTc5MzcyLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzIxNDcxMzgzLCJleHAiOjE3NTMwMjg5ODN9.L1On3px86TvLx-1VJPvngSjE0gEa7JiSnHNvyeMGWl4",
+    "userId": "65774eb89fd99c85e8e6d649",
+    "message": "Login Successfully"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/api/ecom/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "userEmail": "jitendrareddy05@gmail.com",
+    "userPassword": "Password@111"
+}
+HTTP/1.1 400 Bad Request
+Date: Sat, 20 Jul 2024 10:29:44 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control: off
+Expect-CT: max-age=0
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+X-XSS-Protection: 0
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 42
+ETag: W/"2a-7xhDPE7DjWc9gYJSg5IVjDI49pc"
+Vary: Accept-Encoding
+Connection: close
+
+{
+    "message": "Incorrect email or password."
+}
