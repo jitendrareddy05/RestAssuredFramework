@@ -31,10 +31,10 @@ public class Utils {
 		return reqspec;
 	}
 
-	public RequestSpecification requestSpecificationWithHeaderToken(String token) throws IOException {
+	public RequestSpecification requestSpecificationForFormData() throws IOException {
 		if (reqspec == null) {
 			PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
-			reqspec = new RequestSpecBuilder().setBaseUri(globalProperties("baseURL")).addHeader("Authorization", token)
+			reqspec = new RequestSpecBuilder().setBaseUri(globalProperties("baseURL"))
 					.addFilter(RequestLoggingFilter.logRequestTo(log))
 					.addFilter(ResponseLoggingFilter.logResponseTo(log)).build();
 
@@ -45,9 +45,8 @@ public class Utils {
 
 	public ResponseSpecification responseSpecification(int statusCode) {
 		if (respspec == null) {
-			respspec = new ResponseSpecBuilder().expectStatusCode(statusCode).expectContentType(ContentType.JSON)
-					.build();
-
+			respspec = new ResponseSpecBuilder().expectStatusCode(statusCode).build();
+			
 			return respspec;
 		}
 		return respspec;
